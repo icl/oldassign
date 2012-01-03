@@ -19,9 +19,7 @@ You need to:
     *   Functionality:
     *   Interactivity:
     *   Navigation:
-
     Please Include
-
     *   Site Name
     *   Site URL
     *   Date Looked At
