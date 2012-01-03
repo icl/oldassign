@@ -17,15 +17,15 @@ You need to:
 2. Find 10 Portfolios that are based on at least 5 of the 10 generic layouts identified [here](http://designshack.net/articles/layouts/10-rock-solid-website-layout-examples) and which span the portfolio design space in an interesting way.
 3. For each site you need to create a table in which you characterize key portfolio
 attributes such as:
->>Brand
->>Functionality
->>Interactivity
->>Navigation
+* Brand: [Make a persona using these guidelines](http://aarronwalter.com/design-personas/)
+* Functionality:
+* Interactivity:
+* Navigation:
 
->Please Include:
->>Site Name
->>Site URL
->Date Looked At
+Please Include:
+* Site Name
+* Site URL
+* Date Looked At
 
 4. This is your first opportunity to familiarize yourself with our method for handing in
 assignments. Information is to be found blah blah
