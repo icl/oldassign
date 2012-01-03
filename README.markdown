@@ -16,13 +16,15 @@ You need to:
 [Minimum Viable Personality](http://www.avc.com/a_vc/2011/09/minimum-viable-personality.html)
 2. Find 10 Portfolios that are based on at least 5 of the 10 generic layouts identified [here](http://designshack.net/articles/layouts/10-rock-solid-website-layout-examples) and which span the portfolio design space in an interesting way.
 3. For each site you need to create a table in which you characterize key portfolio
-attributes such as:
+attributes such as
+
 * Brand: [Make a persona using these guidelines](http://aarronwalter.com/design-personas/)
 * Functionality:
 * Interactivity:
 * Navigation:
 
-Please Include:
+Please Include
+
 * Site Name
 * Site URL
 * Date Looked At
