@@ -19,13 +19,12 @@ You need to:
     *   Functionality:
     *   Interactivity:
     *   Navigation:
-    Please Include
-    *   Site Name
-    *   Site URL
-    *   Date Looked At
+    Please Include the Site Name, Site URL and Date Looked At
 
 4. This is your first opportunity to familiarize yourself with our method for handing in assignments
-assignments. Information is to be found blah blah
+assignments.
+
+Fork this project, and push your work back up (Obviously add more later)
 
 If you have trouble now is the time to ask the TAs
 
