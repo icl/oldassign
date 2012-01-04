@@ -15,7 +15,7 @@ You need to:
 
 3.  For each site you need to create a table in which you characterize key portfolio attributes such as
 
-    *   Brand: [Make a persona using these guidelines](http://aarronwalter.com/design-personas/)
+    *   Brand:
     *   Functionality:
     *   Interactivity:
     *   Navigation:
