@@ -4,7 +4,9 @@ To upload your first assignment you will need to do the following:
 
 2. Set up Git on your computer http://help.github.com/set-up-git-redirect
 
-3. Fork the assignment at https://github.com/icl/COGS187A_Portfolio which is a repository containing files that will be the starting point for you first assignment.
+3. Go to Github at https://github.com/icl/COGS187A_Portfolio You will find there a bunch of directories you can add to, such as images, stylesheets.  You can also just edit the index file - yes it is exclusively yours - but that is probably a bad idea since the editor us lousy. 
+
+4. which is a repository containing files that will be the starting point for you first assignment.
 
 
 
