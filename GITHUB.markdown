@@ -6,11 +6,10 @@ To upload your first assignment you will need to do the following:
 
 3. Go to Github at https://github.com/icl/COGS187A_Portfolio You will find there a bunch of directories you can add to, such as images, stylesheets.  You can also just edit the index file - yes it is exclusively yours - but that is probably a bad idea since the editor us lousy. 
 
-4. which is a repository containing files that will be the starting point for you first assignment.
+4. Before you can actually take ownership of this directory exclusively you need to have github know where your files come from.  This is called forking because Github creates a new path with your identity, separating your files from others.  If you are part of a team it will keep track of your team's files and who made what changes.  To cause Github keep a copy of your files that you can periodically write to (thereby updating the latest files but also keeping a record of previous files) you have to hit the FORK button on the Github page for this assignment (ie https://github.com/icl/COGS187A_Portfolio).  The FORK button is at the top along with WATCH ...  Click it and you will now create a directory with your name and a subdirectory for this assignment.  You can see that in the url.  
 
 
 
-First make a Fork of the repository by clicking the "Fork" button in the top right hand corner. This will make your very own copy of the git repository that you can work on. The page in github will look largely the same, but note that it now will say yourname/COGS187A\_Portfolio in the top left corner, and forked from "icl/COGS187A\_Portfolio"
 
 Now open up a Terminal, or the Git-Bash shell if you are using windows.
 
