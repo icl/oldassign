@@ -23,13 +23,13 @@ Enter the following, replacing "[your username here]" with your github account n
 Please note we will use $ as a marker to show what you should enter in the command line. You should not enter the $. Any lines without the $ should be read as expected output
 
 ```bash
-$ git clone git@github.com:[your username here]/COGS187A\_Portfolio.git
+$ git clone git@github.com:[your username here]/COGS187A_Portfolio.git
 ```
 This will create a folder on your computer called "COGS187A\_Portfolio" with the project files in it.
 
 now go to that directory in terminal
 
 ```bash
-cd COGS187A\_Portfolio
+$ cd COGS187A_Portfolio
 ```
 Take a while to look over the files there. README.markdown and GITHUB.markdown 
