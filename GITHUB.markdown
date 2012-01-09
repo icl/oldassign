@@ -32,4 +32,16 @@ now go to that directory in terminal
 ```bash
 $ cd COGS187A_Portfolio
 ```
+
+####FIX
 Take a while to look over the files there. README.markdown and GITHUB.markdown 
+####FIX
+
+In terminal, type `git status`
+if everything up to this point has worked you should see:
+
+```bash
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+```
