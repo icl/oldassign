@@ -1,185 +1,193 @@
 To upload your first assignment you will need to do the following:
 
+###Prepare Yourself
 1. Sign up for a [free Github account](https://github.com/signup/free). Git is a version control system that you will use to submit your assignments.  
 
 2. Set up Git on your computer http://help.github.com/set-up-git-redirect
 
 3. Go to Github at https://github.com/icl/COGS187A_Portfolio You will find there a bunch of directories you can add to, such as images, stylesheets.
 
-4. Before you can actually take ownership of this directory exclusively you need to have Github know where your files come from.  This is called forking because Github creates a new path with your identity, separating your files from others.  If you are part of a team it will keep track of your team's files and who made what changes.  To cause Github keep a copy of your files that you can periodically write to (thereby updating the latest files but also keeping a record of previous files) you have to hit the FORK button on the Github page for this assignment (ie https://github.com/icl/COGS187A_Portfolio).  The FORK button is at the top along with WATCH ...  Click it and you will now create a directory with your name and a subdirectory for this assignment.  You can see that in the url.  
+4. Before you can actually take ownership of this directory exclusively you need to have Github know where your files come from.  This is called forking because Github creates a new path with your identity, separating your files from others.  If you are part of a team it will keep track of your team's files and who made what changes.  To cause Github to keep a copy of your files that you can periodically write to (thereby updating the latest files but also keeping a record of previous files) you have to hit the FORK button on the Github page for this assignment (ie https://github.com/icl/COGS187A_Portfolio).  The FORK button is at the top along with WATCH ...  Click it and you will now create a directory with your name and a subdirectory for this assignment. This will redirect you to your own copy of the assignment, youou can see that in the url it now shows your name instead of 'icl'.  
 
 5.  Obviously you will want to work on your assignment on your computer and periodically push your own files up to your Github account and then once they are there you will periodically push again to update the files on Github.  
 
 6.  There is one more step to understand.  Your own computer needs to have the files we are already put up in the 187a_Competitive Analysis directory.  To do that we need to "clone" Github's repository.  This will duplicate its current directory structure on your machine.  Once you have cloned this repository if anyone else were to change files there (because you were collaborating with them) then you will need to 'Pull' from Github and it will add whatever is new to your own repository [you don't need to worry about pulling until you work in teams].  
 
-Open up a Terminal, or the Git-Bash shell if you are using windows.
 
-Enter the following, replacing "[your username here]" with your Github account name:
+###Get the Files on Your Computer
+7. Open up a **new** Terminal, or the Git-Bash shell if you are using windows.
 
-Please note we will use $ as a marker to show what you should enter in the command line. You should not enter the $. Any lines without the $ should be read as expected output
+8. Enter the following, replacing "[your username here]" with your Github account name:
 
-```bash
-$ git clone git@github.com:[your username here]/COGS187A_Portfolio_Analysis.git
+    Please note we will use $ as a marker to show what you should enter in the command line. You should not enter the $. Any lines without the $ should be read as expected output
+
+    ```bash
+    $ git clone git@github.com:[your username here]/COGS187A_Portfolio_Analysis.git
+    ```
+    This will create a folder on your computer called "COGS187A\_Portfolio_" with the project files in it.
+
+9. Go to that directory in terminal
+
+    ```bash
+    $ cd COGS187A_Portfolio
+    ```
+
+10. In terminal, type `git status`
+    if everything up to this point has worked you should see:
+
+    ```bash
+    $ git status
+    # On branch master
+    nothing to commit (working directory clean)
+    ```
+
+###Work With Files
+
+11. Take a look at the contents of the folder, they should be the same as you saw on Github.
+
+12. Open **index.html** in an editor, we recommend [Komodo Edit](http://www.activestate.com/komodo-edit/downloads)
+
+	```html
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>A Generic Page</title>
+	    <meta name="description" content="something good should go here">
+	    <meta name="author" content="your name should go here">
+
+	    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+	    <!-- Base Stylsheets -->
+	    <link rel="stylesheet" href="stylesheets/lib/bootstrap.css" >
+	    <link rel="stylesheet" href="stylesheets/lib/fancybox.css" >
+
+		<!-- Your Stylesheets -->
+		<link rel="stylesheet" href="stylesheets/style.css" >
+
+		<!-- Base Javascripts -->
+	    <script src="javascripts/lib/base.min.js"></script>
+
+		<!-- Your Javascripts -->
+	    <script src="javascripts/main.js"></script>
+	  </head>
+
+	  <body>
+	    <div class="container">
+			PUT STUFF HERE
+	    </div>
+	  </body>
+	</html>
+	```
+
+13. Replace the line "PUT STUFF HERE" with something of your own and save the file.
+
+14. Back in Terminal, type `git status` again. You should see that Git notices that the file has changed.
+
+	```bash
+	$ git status
+	# On branch master
+	# Changes not staged for commit:
+	#   (use "git add <file>..." to update what will be committed)
+	#   (use "git checkout -- <file>..." to discard changes in working directory)
+	#
+	#	modified:   index.html
+	#
+	no changes added to commit (use "git add" and/or "git commit -a")
+	```
+15. One of Git's most useful features is that you can "commit" versions of your files whenever you want. Each commit saves the a copy of whatever changes you made since the last one. If you accidentally delete a file or lose some work you can check the file from Git's history. Just like it's a good idea to "Save early; save often" its a good idea to commit early and commit often.
+
+16. Take Git's advice and type `git commit -am 'I edited the index'`
+
+	*Note: the -m 'some message in quotes' is meant to add a message to the history so you know what you did later. If you omit it, git will pop up an editor called vi to prompt you for a message, press **esc** then **q** to quit if you need to.*
+
+	```bash
+	$ git commit -am 'I edited the index!'
+	[master bdd6efa] I edited the index!
+	 1 files changed, 1 insertions(+), 1 deletions(-)
+	```
+
+###Adding Files To add files to your project you use the `git add` command.
+
+17. Make a new file in the directory
+
+18. Git status should now show your new file:
+
+	```bash
+	$ git status
+	# On branch master
+	# Your branch is ahead of 'origin/master' by 1 commit.
+	#
+	# Untracked files:
+	#   (use "git add <file>..." to include in what will be committed)
+	#
+	#	somenewfilename
+	nothing added to commit but untracked files present (use "git add" to track)
 ```
-This will create a folder on your computer called "COGS187A\_Portfolio_" with the project files in it.
+19. Git was originally described as "A Stupid Content Tracker", which in a way it is. It won't register changes to files unless you tell it to track them.
 
-now go to that directory in terminal
+	```bash
+	$ git add somenewfilename
+	```
 
-```bash
-$ cd COGS187A_Portfolio
-```
+20. Now git status should show you that git is ready to commit your new file
 
-In terminal, type `git status`
-if everything up to this point has worked you should see:
+	```
+	$ git status
+	# On branch master
+	# Your branch is ahead of 'origin/master' by 1 commit.
+	#
+	# Changes to be committed:
+	#   (use "git reset HEAD <file>..." to unstage)
+	#
+	#	new file:   somenewfilename
+	#
+	```
 
-```bash
-$ git status
-# On branch master
-nothing to commit (working directory clean)
-```
+19. Do that now with git commit -m 'Add somenewfile'
 
-Take a look at the contents of the folder, they should be the same as you saw on Github.
+	```
+	$ git commit -m 'Add somenewfile'
+	[master 4ff38f9] Add somenewfile
+	 0 files changed, 0 insertions(+), 0 deletions(-)
+	 create mode 100644 somenewfilename
+	```
 
-Open **index.html** in an editor, we recommend [Komodo Edit](http://www.activestate.com/komodo-edit/downloads)
+20. As you work through these steps you make have noticed this line in the git status messages
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>A Generic Page</title>
-    <meta name="description" content="something good should go here">
-    <meta name="author" content="your name should go here">
+	`# Your branch is ahead of 'origin/master' by 2 commits.`
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	This means that the commits you've made have pushed the history on your computer ahead of whats on your Github repository online.
 
-    <!-- Base Stylsheets -->
-    <link rel="stylesheet" href="stylesheets/lib/bootstrap.css" >
-    <link rel="stylesheet" href="stylesheets/lib/fancybox.css" >
-
-	<!-- Your Stylesheets -->
-	<link rel="stylesheet" href="stylesheets/style.css" >
-
-	<!-- Base Javascripts -->
-    <script src="javascripts/lib/base.min.js"></script>
-
-	<!-- Your Javascripts -->
-    <script src="javascripts/main.js"></script>
-  </head>
-
-  <body>
-    <div class="container">
-		PUT STUFF HERE
-    </div>
-  </body>
-</html>
-```
-
-Replace the line "PUT STUFF HERE" with something of your own and save the file.
-
-Back in Terminal, type `git status` again. You should see that Git notices that the file has changed.
-
-```bash
-$ git status
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   index.html
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-One of Git's most useful features is that you can "commit" versions of your files whenever you want. Each commit saves the a copy of whatever changes you made since the last one. If you accidentally delete a file or lose some work you can check the file from Git's history. Just like it's a good idea to "Save early; save often" its a good idea to commit early and commit often.
-
-Take Git's advice and type `git commit -am 'I edited the index'`
-
-*Note: the -m 'some message in quotes' is meant to add a message to the history so you know what you did later. If you omit it, git will pop up an editor called vi to prompt you for a message, press **esc** then **q** to quit if you need to.*
-
-```bash
-$ git commit -am 'I edited the index!'
-[master bdd6efa] I edited the index!
- 1 files changed, 1 insertions(+), 1 deletions(-)
-```
-
-To add files to your project you use the `git add` command.
-
-Make a new file in the directory
-
-Git status should now show your new file:
-
-```bash
-$ git status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	somenewfilename
-nothing added to commit but untracked files present (use "git add" to track)
-```
-Git was originally described as "A Stupid Content Tracker", which in a way it is. It won't register changes to files unless you tell it to track them.
-
-```bash
-$ git add somenewfilename
-```
-
-Now git status should show you that git is ready to commit your new file
-
-```bash
-$ git status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   somenewfilename
-#
-```
-
-You can do that now with `git commit -m 'Add somenewfile'`
-```bash
-$ git commit -m 'Add somenewfile'
-[master 4ff38f9] Add somenewfile
- 0 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 somenewfilename
-````
-
-As you work through these steps you make have noticed this line in the git status messages
-
-`# Your branch is ahead of 'origin/master' by 2 commits.`
-
-This means that the commits you've made have pushed the history on your computer ahead of whats on your Github repository online.
-
-You can confirm this by Going to your project's web page on github
+21. Confirm this by Going to your project's web page on github
 https://github.com/[yourname]/COGS187A__
 
-Your new file won't show up, and index.html should be just as you downloaded it.
+	Your new file won't show up, and index.html should be just as you downloaded it.
 
-You use the command `git push` to bring Github up to date with the changes you've made.
+22. You can pull down changes from Github by using `git pull`. Right now there shouldn't be any, but its a good habit to get in to if you are working with other people, or on multiple computers.
 
-```bash
-$ git push
-Counting objects: 8, done.
-Delta compression using up to 2 threads.
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (6/6), 557 bytes, done.
-Total 6 (delta 3), reused 0 (delta 0)
-To git@github.com:icl/COGS187A_Portfolio.git
-   78c917c..4ff38f9  master -> master
-```
+	```bash
+	$ git pull
+	Already up-to-date.
+	```
 
-You can pull down changes from Github by using `git pull`. Right now there shouldn't be any, but its a good habit to get in to if you are working with other people, or on multiple computers.
 
-```bash
-$ git pull
-Already up-to-date.
-```
+23.	You use the command `git push` to bring Github up to date with the changes you've made.
+
+	```bash
+	$ git push
+	Counting objects: 8, done.
+	Delta compression using up to 2 threads.
+	Compressing objects: 100% (5/5), done.
+	Writing objects: 100% (6/6), 557 bytes, done.
+	Total 6 (delta 3), reused 0 (delta 0)
+	To git@github.com:icl/COGS187A_Portfolio.git
+	   78c917c..4ff38f9  master -> master
+	```
+
 
 ###Where to Go from here:
 * [Check out your first assignment]
