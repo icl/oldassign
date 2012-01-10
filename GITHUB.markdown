@@ -24,9 +24,9 @@ To upload your first assignment you will need to do the following:
 	**Remember to replace "yournamehere" with your Github username**
 
     ```bash
-    $ git clone git@github.com:yourusernamehere/COGS187A_Portfolio_Analysis.git
+    $ git clone git@github.com:yourusernamehere/COGS187A_Portfolio.git
     ```
-    This will create a folder on your computer called "COGS187A\_Portfolio_" with the project files in it.
+    This will create a folder on your computer called "COGS187A\_Portfolio" with the project files in it.
 
 9. Go to that directory in terminal
 
