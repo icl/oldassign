@@ -21,8 +21,10 @@ To upload your first assignment you will need to do the following:
 
     Please note we will use $ as a marker to show what you should enter in the command line. You should not enter the $. Any lines without the $ should be read as expected output
 
+	**Remember to replace "yournamehere" with your Github username**
+
     ```bash
-    $ git clone git@github.com:[your username here]/COGS187A_Portfolio_Analysis.git
+    $ git clone git@github.com:yourusernamehere/COGS187A_Portfolio_Analysis.git
     ```
     This will create a folder on your computer called "COGS187A\_Portfolio_" with the project files in it.
 
@@ -43,7 +45,7 @@ To upload your first assignment you will need to do the following:
 
 ###Work With Files
 
-11. Take a look at the contents of the folder, they should be the same as you saw on Github.
+11. Take a look at the contents of the folder which should be in your home directory. The files should be the same as you saw on Github.
 
 12. Open **index.html** in an editor, we recommend [Komodo Edit](http://www.activestate.com/komodo-edit/downloads)
 
@@ -112,7 +114,7 @@ To upload your first assignment you will need to do the following:
 
 ###Adding Files To add files to your project you use the `git add` command.
 
-17. Make a new file in the directory
+17. Make a new file in the directory; you can put whatever you want in it.
 
 18. Git status should now show your new file:
 
@@ -162,8 +164,7 @@ To upload your first assignment you will need to do the following:
 
 	This means that the commits you've made have pushed the history on your computer ahead of whats on your Github repository online.
 
-21. Confirm this by Going to your project's web page on github
-https://github.com/[yourname]/COGS187A__
+21. Confirm this by Going to your project's web page on Github
 
 	Your new file won't show up, and index.html should be just as you downloaded it.
 
