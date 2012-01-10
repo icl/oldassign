@@ -112,7 +112,7 @@ To upload your first assignment you will need to do the following:
 	 1 files changed, 1 insertions(+), 1 deletions(-)
 	```
 
-###Adding Files To add files to your project you use the `git add` command.
+###Add Files
 
 17. Make a new file in the directory; you can put whatever you want in it.
 
@@ -193,7 +193,7 @@ To upload your first assignment you will need to do the following:
 ###Where to Go from here:
 * [Check out your first assignment]
 * [Learn More about Git](http://rogerdudler.github.com/git-guide/)
-* [Check out Github's App](http://mac.github.com/)
+* [Check out Github's Mac App](http://mac.github.com/)
 * [or TortoiseGit for Windows](http://code.google.com/p/tortoisegit/)
-* [Dive in](http://code.google.com/p/tortoisegit/)
+* [Dive in](http://gitimmersion.com/)
 
